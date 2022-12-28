@@ -48,6 +48,7 @@ function App() {
                 placeholder={'Поиск дела...'}
                 onChange={e => setSearchTodo(e.target.value)}
             />
+            {searchTodos.length
             ? <ToDoList searchTodos={searchTodos} todos={todos} setTodos={setTodos} />
             : <h2>Дела не найдены :(</h2>
             }
